@@ -37,6 +37,7 @@ export default async function comments(
       }
     }
   `
+  //return the result
   const result = await graphQLClient.request(query, req.body)
   return res.status(200).send(result)
 }
