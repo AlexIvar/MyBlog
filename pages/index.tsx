@@ -26,7 +26,7 @@ const Home = ({ posts }) => {
         </div>
         <div className="col-span-1 lg:col-span-4">
           <div className="relative top-8 lg:sticky">
-            <PostWidget />
+            <PostWidget categories={posts.node} slug={posts.node} />
             <Categories />
           </div>
         </div>
